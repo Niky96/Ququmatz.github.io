@@ -1,0 +1,812 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("imgs/navbar.png");
+    width: 100%;
+    height: 80px;
+    padding: 0%;
+    position: fixed;
+    z-index: 10;
+} 
+
+body {
+    background-image: url("imgs/sfondo.png");
+    background-repeat: repeat;
+    background-size: contain;
+    margin: 0px !important;
+}
+
+.q {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    width: 15%;
+    align-content: center;
+    justify-content: center;
+}
+
+.q img {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 42%;
+    height: 50px;
+
+}
+
+.emptyheader {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    width: 15%;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    font-size: 25px;
+    font-family: 'Choc Chip';
+    color: white;
+    align-content: center;
+}
+
+.menu a:hover {
+    color: #ffffff8e;
+}
+
+.desktop {
+    display: flex;
+}
+
+.mobile {
+    display: none;
+}
+
+.gioco {
+    color: #ffffff8e;
+}
+
+.emptyheader1 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    width: 30%;
+}
+
+.burgercontainer {
+    display: none;
+    position: relative;
+    height: 70px;
+    width: 15%;
+    align-content: center;
+    justify-content: center;
+}
+
+.linee {
+  border: none;
+  cursor: pointer;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    overflow: auto;
+    margin-left: -380%;
+    text-align: center;
+    margin-top: 55%;
+}
+
+.burgercontainer button {
+    display: block;
+    background-color: unset;
+    border: unset;
+    padding: 0px;
+}
+
+.burgercontainer button img {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    height: 38px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.gamelanding {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.videotrailer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+video {
+    width: 55%;
+    position: relative;
+    z-index: 0;
+}
+
+.videotrailer img {
+    position: absolute;
+}
+
+.sup {
+    width: 60%;
+    z-index: 1;
+    margin-top: -38%;
+}
+
+.inf {
+    width: 62%;
+    z-index: 1;
+    margin-top: 40%;
+}
+
+.sx {
+    z-index: 2;
+    margin-top: 2%;
+    margin-left: -49.5%;
+    width: 11%;
+}
+
+.dx {
+    z-index: 2;
+    margin-left: 49%;
+    width: 11%;
+}
+
+.mariachi {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.mariachi img {
+    width: 90%;
+    position: relative;
+    z-index: 0;
+}
+
+.testomariachi {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #494848;
+    font-size: 20px;
+    width: 40%;
+    height: 50%;
+    margin-bottom: 8%;
+    position: absolute;
+    z-index: 1;
+}
+
+.testomariachi h3 {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Choc Chip';
+    font-size: 35px;
+}
+
+.slideroi {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.pergamenaeroi {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.pergamenaeroi img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+}
+
+.slideshow {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    position: relative;
+    align-items: flex-end;
+}
+
+.dxarrow {
+    width: 15%;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sxarrow {
+    width: 15%;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    user-select: none;
+}
+
+.prev {
+    cursor: pointer;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    user-select: none;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.mariachi img {
+    margin-left: 5%;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.alonso, .luchano, .letitia {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10%;
+    height: max-content;
+}
+
+.posteralonso, .posterluchano, .posterletitia {
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+    align-items: center;
+}
+
+.posteralonso img, .posterluchano img, .posterletitia img {
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+}
+
+.alonsotext, .luchanotext, .letitiatext {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url("imgs/guantone.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-top: 8%;
+    padding-bottom: 10%;
+}
+
+.testo1, .testo2, .testo3, .testo4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #494848;
+    font-size: 25px;
+    text-align: left;
+    width: 100%;
+    line-height: 130%;
+}
+
+.testo1 h2, .testo2 h2, .testo3 h2, .testo4 h2, .testo5 h2 {
+    font-family: 'Choc Chip';
+}
+
+.pergamenainediti {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.pergamenainediti img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 38%;
+}
+
+.cucina, .cantina {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.cucinatext, .cantinatext {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cantinatext {
+    padding-left: 8%;
+}
+
+.lacucina, .lacantina {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.lacucina img, .lacantina img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+.lacantina img {
+    width: 49%;
+}
+
+.cuoco, .sciamana {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    margin-top: 5%;
+    height: max-content;
+    justify-content: center;
+    background-image: url("imgs/cappello.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sciamana {
+    background-image: url("imgs/pozione.png");
+    width: 40%;
+}
+
+.cuoco img, .sciamana img {
+    width: 80%;
+}
+
+.testo4, .testo5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #494848;
+    font-size: 25px;
+    text-align: left;
+    width: 80%;
+    line-height: 130%;
+    margin-top: 12%;
+}
+
+.testo5 {
+    width: 90%;
+}
+
+.screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.pergamenascreen {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.pergamenascreen img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+}
+
+.screenbox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 5%;
+}
+
+.screenbox img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    margin-bottom: 3%;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.logounity {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    align-content: center;
+    justify-content: center;
+}
+
+.loghistore {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    align-content: center;
+}
+
+.logounity img, .loghistore img {
+    width: 20%;
+    margin-right: 5%;
+}
+
+.emptyfooter {
+    width: 10%;
+}
+
+.testofooter {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #494848;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+@font-face {
+    font-family: 'Choc Chip';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Choc Chip'), url('ChocChip.woff') format('woff');
+}
+
+
+
+
+
+
+
+
+
+/* iPad version */
+@media only screen and (max-width: 768px) {
+    .q img {
+        height: 40px;
+    }
+
+    .emptyheader {
+        width: 5%;
+    }
+
+    .emptyheader1 {
+        width: 20%;
+    }
+
+    .navbar {
+        width: 60%;
+    }
+
+    .menu {
+        font-size: 22px;
+    }
+
+    .desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: flex;
+    }
+
+    .videotrailer {
+        margin-top: 13%;
+    }
+
+    .mariachi img {
+        margin-left: 4%;
+    }
+
+    .testomariachi {
+        font-size: 10.5px;
+        height: 28%;
+    }
+    
+    .testomariachi h3 {
+        font-size: 20px;
+        margin-top: 23% !important;
+        margin-bottom: -10px !important;
+    }
+
+    .testo1, .testo2, .testo3, .testo4, .testo5 {
+        font-size: 15px;
+    }
+
+    .cucina, .cantina {
+        margin-top: 5%;
+    }
+
+    .alonsotext, .luchanotext, .letitiatext {
+        padding-top: 0%;
+        padding-bottom: 0%;
+        background-size: 100%;
+    }
+
+    .testofooter {
+        font-size: 8px;
+    }
+
+    .emptyfooter {
+        display: none;
+    }
+
+    .logounity img, .loghistore img {
+        width: 30%;
+        margin-right: 2%;
+        margin-left: 2%;
+        margin-bottom: 5%;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* iPhone version */
+@media only screen and (max-width: 376px) {
+    .emptyheader, .navbar {
+        display: none;
+    }
+
+    .emptyheader1 {
+        width: 70%;
+    }
+
+    .burgercontainer {
+        display: flex;
+    }
+
+    button img {
+        height: 35px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        overflow: auto;
+        width: 450%;
+        height: 450%;
+        text-align: center;
+        margin-top: 75%;
+        font-family: 'Choc Chip';
+        line-height: 200%;
+        font-size: 25px;
+        background-image: url("imgs/foglietto_burger_lungo.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: 200%;
+    }
+
+    .scendi a {
+        color: #494848; 
+    }
+
+    .scendi {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+       margin-top: 18%; 
+    }
+
+    .videotrailer {
+        margin-top: 35%;
+        margin-bottom: 5%;
+    }
+
+    video {
+        width: 75%;
+    }
+
+    .sup {
+        width: 80%;
+        margin-top: -52%;
+    }
+
+    .inf {
+        width: 80%;
+        margin-top: 56%;
+    }
+
+    .sx {
+        width: 15%;
+        margin-left: -67%;
+    }
+
+    .dx {
+        width: 15%;
+        margin-left: 67%;
+    }
+
+    .posteralonso, .posterluchano, .posterletitia {
+        width: 100%;
+    }
+
+    .posteralonso img, .posterluchano img, .posterletitia img {
+        width: 100%;
+    }
+
+    .alonso, .luchano, .letitia {
+        justify-content: center;
+    }
+
+    .alonsotext, .luchanotext, .letitiatext {
+        width: 90%;
+    }
+
+    .testomariachi {
+        font-size: 10px;
+        margin-bottom: 43%;
+        width: 50%;
+    }
+
+    .testomariachi h3 {
+        margin-bottom: 5px !important;
+    }
+
+    .mariachi img {
+        margin-left: 2%;
+    }
+
+    .cucina {
+        flex-direction: column-reverse;
+    }
+
+    .cantina {
+        flex-direction: column;
+        margin-top: 20%;
+    }
+
+    .cuoco, .sciamana {
+        width: 60%;
+    }
+
+    .cucinatext, .cantinatext {
+        width: 80%;
+        justify-content: center;
+        padding-left: 0%;
+    }
+
+    .testo4, .testo5 {
+        width: 100%;
+    }
+
+    .lacucina, .lacantina {
+        justify-content: center;
+    }
+
+    .lacucina img, .lacantina img {
+        width: 100%;
+    }
+
+    .pergamenascreen {
+        margin-top: 20%;
+    }
+
+    .pergamenascreen img, .pergamenainediti img, .pergamenaeroi img {
+        width: 50%;
+    }
+
+    .screenbox {
+        flex-direction: column;
+    }
+
+    .screenbox img {
+        width: 90%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20%;
+    }
+    
+    .emptyfooter {
+        display: none;
+    }
+    
+    .logounity {
+        justify-content: center;
+        margin-bottom: 8%;
+        width: 30%;
+    }
+    
+    .loghistore {
+        justify-content: center;
+    }
+    
+    .logounity img, .loghistore img {
+        width: 70%;
+        margin-right: 2%;
+        margin-left: 2%;
+        margin-bottom: 5%;
+    }
+    
+    .testofooter {
+        font-size: 8px;
+        margin-bottom: 10%;
+    }
+}

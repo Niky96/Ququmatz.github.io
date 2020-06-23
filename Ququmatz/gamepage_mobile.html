@@ -1,0 +1,182 @@
+<html>
+<head>
+    <title>QUQUMATZ</title>
+    <link rel="icon" href="imgs/favicon.png" type="image/png"/>
+    <link href="game_mobile_style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="ququ_java.js"></script>
+</head>
+<body onload="inizializza()">
+    <nav class="header">
+        <div class="q">
+            <a href="index.html"><img src="imgs/Q.png"></a>
+        </div>
+        <div class="emptyheader"></div>
+        <div class="navbar">
+            <div class="menu">
+                <a class="gioco" href="gamepage_mobile.html">GAME</a>
+            </div>
+            <div class="menu">
+                <a href="news.html">NEWS</a>
+            </div>
+            <div class="menu">
+                <a class="desktop" href="extra.html">EXTRA</a>
+                <a class="mobile" href="extra_mobile.html">EXTRA</a>
+            </div>
+            <div class="menu">
+                <a href="index.html#contatti">CONTATTI</a>
+            </div>
+        </div>
+        <div class="emptyheader1"></div>
+        <div class="burgercontainer">
+            <button class="linee" onclick="burgermenu()">
+                <img src="imgs/burgerbutton.png">
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <div class="scendi">
+                    <a href="gamepage_mobile.html">GAME</a>
+                    <a href="news.html">NEWS</a>
+                    <a href="extra_mobile.html">EXTRA</a>
+                    <a href="index.html#contatti">CONTATTI</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <landing class="gamelanding">
+        <div class="videotrailer">
+            <img class="sup" src="imgs/cornice_sup.png">
+            <img class="inf" src="imgs/cornice_inf.png">
+            <img class="sx" src="imgs/cornice_sx.png">
+            <img class="dx" src="imgs/cornice_dx.png">
+            <video controls>
+                <source src="proto.mp4" type="video/mp4">
+                <source src="proto.ogg" type="video/ogg">
+            </video>
+        </div>
+        <div class="mariachi">
+            <picture>
+                <source media="(max-width: 376px)" srcset="imgs/mariachi_mobile.png">
+                <img src="imgs/mariachi.png">
+            </picture>
+            <div class="testomariachi">
+                <p><h3>QUQUMATZ</h3>Ququmatz è ambientato in un Messico afflitto da un'imminente catastrofe:
+                    la rivolta delle divinità azteche. Per nostra fortuna la palestra dei
+                    Luchadores si è schierata in difesa del mondo ed è pronta a combattere
+                    le forze del male. Le meccaniche del gioco fondono il gameplay dei tower
+                    defense a quello degli RTS, offrendo un'esperienza unica nei casual games.
+                    Non basta? Lo sappiamo. Dopo la storia principale, se non bastasse il DLC
+                    che offre altri venticinque livelli, sarà disponibile la piattaforma PVP
+                    online per estendere il combattimento e sfidare i tuoi amici!</p>
+            </div>
+        </div>
+        <div class="slideroi">
+            <div class="pergamenaeroi">
+                <img src="imgs/luchadores.png">
+            </div>
+            <div class="sxarrow"><a class="prev" onclick="plusSlides(-1)"><img src="imgs/frecciascura_sx.png" style="width:50%;"></a></div>
+            <div class="slideshow_mobile">
+                <div class="mySlides" onclick="info_alonso()">
+                    <div class="alonso">
+                        <div class="posteralonso">
+                            <img src="imgs/alonso.png">
+                            <div id="infoeroe1" class="alonsotext">
+                                <img src="imgs/alonso_nero.png">
+                                <div class="testo1">
+                                    <p><h2>ALONSO</h2>Figlio del miglior luchador messicano, quando perse il padre sul ring promise a se stesso di riscrivere la storia della sua famiglia, onorandola con continue vittorie sul ring e diventando un glorioso luchador messicano.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides" onclick="info_luchano()">
+                    <div class="luchano">
+                        <div class="posterluchano">
+                            <img src="imgs/luchano.png">
+                            <div id="infoeroe2" class="luchanotext">
+                                <img src="imgs/luchano_nero.png">
+                                <div class="testo2">
+                                    <p><h2>LUCHANO</h2>Da sempre deriso dai bulletti per la sua forma fisica corpulenta, Luchano ha scoperto la sua vocazione nella lucha libre diventando uno dei più forti pesi massimi della scena, tanto che con il successo gli è stato dato il nomignolo di “Spectacular”. Ora è pronto più che mai a lanciare per aria i nemici.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides" onclick="info_letitia()">
+                    <div class="letitia">
+                        <div class="posterletitia">
+                            <img src="imgs/letitia.png">
+                            <div id="infoeroe3" class="letitiatext">
+                                <img src="imgs/letitia_nero.png">
+                                <div class="testo3">
+                                    <p><h2>LETITIA</h2>Una promessa della lotta libera a tutto pepe…roncino! Letitia ha sempre lottato con il padre, ormai anziano e fuori dal giro, e si è fatta riconoscere nel mondo della lucha libre per le sue formidabili doti da proiezionista. Sotto a chi tocca! Flip è pronta a dimostrare che il ring è posto per una donna..</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dxarrow"><a class="next" onclick="plusSlides(1)"><img src="imgs/frecciascura_dx.png" style="width:50%;"></a></div> 
+        </div>
+        <div class="inediti">
+            <div class="pergamenainediti">
+                <img src="imgs/contenutiinediti.png">
+            </div>
+            <div class="cucina">
+                <div class="cucinatext">
+                    <div class="testo4">
+                        <p><h2>CUCINA</h2>Come ogni palestra che si rispetti, anche la squadra di Luchadores merita di essere messa in forze. Colleziona ingredienti e fai cucinare al Cuoco ben sedici ricette tipiche, nell’innovativa sezione Cucina dell’HUB di Ququmatz!</p>
+                    </div>
+                    <div class="lacucina">
+                        <img src="imgs/schermatacucina.png">
+                    </div>
+                </div>
+                <div class="cuoco">
+                    <img src="imgs/cuoco.png">
+                </div>
+            </div>
+            <div class="cantina">
+                <div class="sciamana">
+                    <img src="imgs/sciamana.png">
+                </div>
+                <div class="cantinatext">
+                    <div class="testo5">
+                        <p><h2>CANTINA</h2>Meglio lottare contro le forze del male ad armi pari, giusto? Raccogli i trinkets e portali alla Mama-Voodoo per farle costruire oggetti magici imbattibili, nella nuova sezione Cantina dell’HUB di Ququmatz!</p>
+                    </div>
+                    <div class="lacantina">
+                        <img src="imgs/schermatacantina.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="screenshots">
+            <div class="pergamenascreen">
+                <img src="imgs/screenshots.png">
+            </div>
+            <div class="screenbox">
+                <img src="imgs/screen1.png">
+                <img src="imgs/screen2.png">
+                <img src="imgs/screen3.png">
+                <img src="imgs/screen4.png">
+                <img src="imgs/screen5.png">
+                <img src="imgs/screen6.png">
+                <img src="imgs/screen7.png">
+                <img src="imgs/screen8.png">
+                <img src="imgs/screen9.png">
+            </div>
+        </div>
+    </landing>
+    <footer class="footer">
+        <div class="emptyfooter"></div>
+        <div class="logounity">
+            <img src="imgs/unity.png">
+        </div>
+        <div class="loghistore">
+            <img src="imgs/appstore.png">
+            <img src="imgs/googleplay.png">
+        </div>
+        <div class="testofooter">
+            <p>© 2020 QUQUMATZ. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+</body>
+</html>

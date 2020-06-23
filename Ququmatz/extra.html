@@ -1,0 +1,226 @@
+<html>
+<head>
+    <title>QUQUMATZ</title>
+    <link rel="icon" href="imgs/favicon.png" type="image/png"/>
+    <link href="extra_style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="ququ_java.js"></script>
+</head>
+<body onload="inizializza()">
+    <nav class="header" style="top: 0px !important;">
+        <div class="q">
+            <a href="index.html"><img src="imgs/Q.png"></a>
+        </div>
+        <div class="emptyheader"></div>
+        <div class="navbar">
+            <div class="menu">
+                <a href="gamepage.html">GAME</a>
+            </div>
+            <div class="menu">
+                <a href="news.html">NEWS</a>
+            </div>
+            <div class="menu">
+                <a class="desktop, prodotti" href="extra.html">EXTRA</a>
+                <a class="mobile" href="extra_mobile.html">EXTRA</a>
+            </div>
+            <div class="menu">
+                <a href="index.html#contatti">CONTATTI</a>
+            </div>
+        </div>
+        <div class="emptyheader1"></div>
+        <div class="burgercontainer">
+            <button class="linee" onclick="burgermenu()">
+                <img src="imgs/burgerbutton.png">
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <div class="scendi">
+                    <a href="gamepage_mobile.html">GAME</a>
+                    <a href="news.html">NEWS</a>
+                    <a href="extra_mobile.html">EXTRA</a>
+                    <a href="index.html#contatti">CONTATTI</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="gallery">
+        <div class="sxarrow"><a class="prev" onclick="plusSlides(-1)"><img src="imgs/frecciascura_sx.png" style="width:50%;"></a></div>
+        <div class="slideshow">
+            <div class="mySlides">
+                <div class="testi">
+                    <div class="testoelemento"><p>Artbook - Copertina rigida</p></div>
+                    <div class="testoelemento"><p>Artbook - Copertina flessibile</p></div>
+                </div>
+                <div class="elements">
+                    <div class="image">
+                        <img class="prodotto" src="imgs/merchgallery/book.png">
+                        <div class="bottone"><img src="imgs/acquista.png"></div>
+                    </div>
+                    <div class="image">
+                        <img class="prodotto" src="imgs/merchgallery/book2.png">
+                        <div class="bottone"><img src="imgs/acquista.png"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="testi">
+                    <div class="testoelemento"><p>T-shirt bianca con logo</p></div>
+                    <div class="testoelemento"><p>T-shirt nera con logo</p></div>
+                </div>
+                <div class="elements">
+                    <div class="image">
+                        <img class="prodotto" src="imgs/merchgallery/maglia.png">
+                        <div class="bottone"><img src="imgs/acquista.png"></div>
+                    </div>
+                    <div class="image">
+                        <img class="prodotto" src="imgs/merchgallery/maglianera.png">
+                        <div class="bottone"><img src="imgs/acquista.png"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="testi">
+                    <div class="testoelemento"><p>T-shirt bianca Luchano</p></div>
+                    <div class="testoelemento"><p>T-shirt bianca Alonso</p></div>
+                </div>
+                <div class="elements">
+                    <div class="image">
+                        <img class="prodotto" src="imgs/merchgallery/maglia_luc.png">
+                        <div class="bottone"><img src="imgs/acquista.png"></div>
+                    </div>
+                    <div class="image">
+                        <img class="prodotto" src="imgs/merchgallery/maglia_alo.png">
+                        <div class="bottone"><img src="imgs/acquista.png"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="testi">
+                    <div class="testoelemento"><p>T-shirt bianca Letitia</p></div>
+                    <div class="testoelemento"><p>Shopper Eroi</p></div>
+                </div>
+                <div class="elements">
+                    <div class="image">
+                        <img class="prodotto" src="imgs/merchgallery/maglia_let.png">
+                        <div class="bottone"><img src="imgs/acquista.png"></div>
+                    </div>
+                    <div class="image">
+                        <img class="prodotto" src="imgs/merchgallery/shopper_eroi.png">
+                        <div class="bottone"><img src="imgs/acquista.png"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="testi">
+                    <div class="testoelemento"><p>Shopper Luchano</p></div>
+                    <div class="testoelemento"><p>Shopper Letitia</p></div>
+                </div>
+                <div class="elements">
+                    <div class="image">
+                        <img class="prodotto" src="imgs/merchgallery/shopper_luc.png">
+                        <div class="bottone"><img src="imgs/acquista.png"></div>
+                    </div>
+                    <div class="image">
+                        <img class="prodotto" src="imgs/merchgallery/shopper_let.png">
+                        <div class="bottone"><img src="imgs/acquista.png"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="testi">
+                    <div class="testoelemento"><p>Shopper Alonso</p></div>
+                    <div class="testoelemento"><p>Shopper Ququmatz</p></div>
+                </div>
+                <div class="elements">
+                    <div class="image">
+                        <img class="prodotto" src="imgs/merchgallery/shopper_alo.png">
+                        <div class="bottone"><img src="imgs/acquista.png"></div>
+                    </div>
+                    <div class="image">
+                        <img class="prodotto" src="imgs/merchgallery/shopper.png">
+                        <div class="bottone"><img src="imgs/acquista.png"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="testi">
+                    <div class="testoelemento"><p>Portachiavi Ququmatz</p></div>
+                    <div class="testoelemento"><p>Portachiavi Eroi e Alonso</p></div>
+                </div>
+                <div class="elements">
+                    <div class="image">
+                        <img class="prodotto" src="imgs/merchgallery/portachiavi.png">
+                        <div class="bottone"><img src="imgs/acquista.png"></div>
+                    </div>
+                    <div class="image">
+                        <img class="prodotto" src="imgs/merchgallery/portachiavi_alo.png">
+                        <div class="bottone"><img src="imgs/acquista.png"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="testi">
+                    <div class="testoelemento"><p>Portachiavi Eroi e Luchano</p></div>
+                    <div class="testoelemento"><p>Portachiavi Eroi e Letitia</p></div>
+                </div>
+                <div class="elements">
+                    <div class="image">
+                        <img class="prodotto" src="imgs/merchgallery/portachiavi_luc.png">
+                        <div class="bottone"><img src="imgs/acquista.png"></div>
+                    </div>
+                    <div class="image">
+                        <img class="prodotto" src="imgs/merchgallery/portachiavi_let.png">
+                        <div class="bottone"><img src="imgs/acquista.png"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="testi">
+                    <div class="testoelemento"><p>Spille Ququmatz</p></div>
+                    <div class="testoelemento"><p>Spille Eroi</p></div>
+                </div>
+                <div class="elements">
+                    <div class="image">
+                        <img class="prodotto" src="imgs/merchgallery/spille.png">
+                        <div class="bottone"><img src="imgs/acquista.png"></div>
+                    </div>
+                    <div class="image">
+                        <img class="prodotto" src="imgs/merchgallery/spille2.png">
+                        <div class="bottone"><img src="imgs/acquista.png"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="testi">
+                    <div class="testoelemento"><p>Stikers Ququmatz</p></div>
+                    <div class="testoelemento"><p>Stikers Eroi</p></div>
+                </div>
+                <div class="elements">
+                    <div class="image">
+                        <img class="prodotto" src="imgs/merchgallery/adesivi.png">
+                        <div class="bottone"><img src="imgs/acquista.png"></div>
+                    </div>
+                    <div class="image">
+                        <img class="prodotto" src="imgs/merchgallery/adesivi2.png">
+                        <div class="bottone"><img src="imgs/acquista.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="dxarrow"><a class="next" onclick="plusSlides(1)"><img src="imgs/frecciascura_dx.png" style="width:50%;"></a></div> 
+        </div>
+    </div>
+</body>
+<footer class="footer">
+    <div class="emptyfooter"></div>
+    <div class="logounity">
+        <img src="imgs/unity.png">
+    </div>
+    <div class="loghistore">
+        <img src="imgs/appstore.png">
+        <img src="imgs/googleplay.png">
+    </div>
+    <div class="testofooter">
+        <p>© 2020 QUQUMATZ. Tutti i diritti riservati.</p>
+    </div>
+</footer>
+</html>

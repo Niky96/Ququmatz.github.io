@@ -1,0 +1,452 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("imgs/navbar.png");
+    width: 100%;
+    height: 80px;
+    padding: 0%;
+    position: fixed;
+    z-index: 10;
+} 
+
+body {
+    background-image: url("imgs/sfondo.png");
+    background-repeat: repeat;
+    background-size: contain;
+    margin: 0px !important;
+    overflow-x: hidden;
+}
+
+.q {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    width: 15%;
+    align-content: center;
+    justify-content: center;
+}
+
+.q img {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 42%;
+    height: 50px;
+
+}
+
+.emptyheader {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    width: 15%;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    font-size: 25px;
+    font-family: 'Choc Chip';
+    color: white;
+    align-content: center;
+}
+
+.menu a:hover {
+    color: #ffffff8e;
+}
+
+.desktop {
+    display: flex;
+}
+
+.mobile {
+    display: none;
+}
+
+.prodotti {
+    color: #ffffff8e;
+}
+
+.emptyheader1 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    width: 30%;
+}
+
+.burgercontainer {
+    display: none;
+    position: relative;
+    height: 70px;
+    width: 15%;
+    align-content: center;
+    justify-content: center;
+}
+
+.linee {
+  border: none;
+  cursor: pointer;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    overflow: auto;
+    margin-left: -380%;
+    text-align: center;
+    margin-top: 55%;
+}
+
+.burgercontainer button {
+    display: block;
+    background-color: unset;
+    border: unset;
+    padding: 0px;
+}
+
+.burgercontainer button img {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    height: 38px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.slideshow {
+    display: flex;
+    width: 60%;
+    position: relative;
+    align-items: center;
+}
+
+.dxarrow, .sxarrow {
+    display: flex;
+    width: 20%;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.next, .prev {
+    cursor: pointer;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    user-select: none;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.elements {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: max-content;
+}
+
+.image {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.prodotto {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.bottone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 108%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.bottone img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    cursor: pointer;
+}
+
+.testi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.testoelemento {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    font-family: 'Choc Chip';
+    font-size: 30px;
+    text-align: center;
+    color: #494848;
+    margin-top: 8%;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.logounity {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    align-content: center;
+    justify-content: center;
+}
+
+.loghistore {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    align-content: center;
+}
+
+.logounity img, .loghistore img {
+    width: 20%;
+    margin-right: 5%;
+}
+
+.emptyfooter {
+    width: 10%;
+}
+
+.testofooter {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #494848;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* iPad version */
+@media only screen and (max-width: 768px) {
+    .q img {
+        height: 40px;
+    }
+
+    .emptyheader {
+        width: 5%;
+    }
+
+    .emptyheader1 {
+        width: 20%;
+    }
+
+    .navbar {
+        width: 60%;
+    }
+
+    .menu {
+        font-size: 22px;
+    }
+
+    .desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: flex;
+    }
+
+    .gallery {
+        margin-top: 8%;
+    }
+
+    .testoelemento {
+        font-size: 25px;
+    }
+
+    .testofooter {
+        font-size: 8px;
+    }
+
+    .emptyfooter {
+        display: none;
+    }
+
+    .logounity img, .loghistore img {
+        width: 30%;
+        margin-right: 2%;
+        margin-left: 2%;
+        margin-bottom: 5%;
+    }
+
+    .footer {
+        justify-content: center;
+        margin-top: 40%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* iPhone version */
+@media only screen and (max-width: 376px) {
+    .emptyheader, .navbar {
+        display: none;
+    }
+
+    .emptyheader1 {
+        width: 70%;
+    }
+
+    .burgercontainer {
+        display: flex;
+    }
+
+    button img {
+        height: 35px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        overflow: auto;
+        width: 450%;
+        height: 450%;
+        text-align: center;
+        margin-top: 75%;
+        font-family: 'Choc Chip';
+        line-height: 200%;
+        font-size: 25px;
+        background-image: url("imgs/foglietto_burger_lungo.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: 200%;
+    }
+
+    .scendi a {
+        color: #494848; 
+    }
+
+    .scendi {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 18%; 
+    }
+
+    .gallery {
+        margin-top: 20%;
+    }
+
+    .testoelemento {
+        font-size: 16px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20%;
+    }
+    
+    .emptyfooter {
+        display: none;
+    }
+    
+    .logounity {
+        justify-content: center;
+        margin-bottom: 8%;
+        width: 30%;
+    }
+    
+    .loghistore {
+        justify-content: center;
+    }
+    
+    .logounity img, .loghistore img {
+        width: 70%;
+        margin-right: 2%;
+        margin-left: 2%;
+        margin-bottom: 5%;
+    }
+    
+    .testofooter {
+        font-size: 8px;
+        margin-bottom: 10%;
+    }
+}

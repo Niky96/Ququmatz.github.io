@@ -1,0 +1,836 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("imgs/navbar.png");
+    width: 100%;
+    height: 80px;
+    padding: 0%;
+    position: fixed;
+    z-index: 10;
+} 
+
+body {
+    background-image: url("imgs/sfondo.png");
+    background-repeat: repeat;
+    background-size: contain;
+    margin: 0px !important;
+}
+
+.q {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    width: 15%;
+    align-content: center;
+    justify-content: center;
+}
+
+.q img {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 82%;
+    height: 50px;
+
+}
+
+.emptyheader {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    width: 15%;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    font-size: 25px;
+    font-family: 'Choc Chip';
+    color: white;
+    align-content: center;
+}
+
+.menu a:hover {
+    color: #ffffff8e;
+}
+
+.desktop {
+    display: flex;
+}
+
+.mobile {
+    display: none;
+}
+
+.mobile1 {
+    display: none;
+}
+
+.emptyheader1 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    width: 30%;
+}
+
+.burgercontainer {
+    display: none;
+    position: relative;
+    height: 70px;
+    width: 15%;
+    align-content: center;
+    justify-content: center;
+}
+
+.linee {
+  border: none;
+  cursor: pointer;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    overflow: auto;
+    margin-left: -380%;
+    text-align: center;
+    margin-top: 55%;
+}
+
+.burgercontainer button {
+    display: block;
+    background-color: unset;
+    border: unset;
+    padding: 0px;
+}
+
+.burgercontainer button img {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    height: 38px;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    cursor: pointer;
+}
+
+.landing {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.heroimage {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    width: fit-content;
+    margin-top: 4%;
+}
+
+.heroimage img {
+    display: flex;
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.herobutton {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    z-index: 1;
+}
+
+.herobutton img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.landingnews {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    width: 100%;
+    height: 100%;
+}
+
+.pergamenanews {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+}
+
+.pergamenanews img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    position: relative;
+    align-items: flex-end;
+}
+
+.dxarrow {
+    width: 15%;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sxarrow {
+    width: 15%;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.next, .prev {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    user-select: none;
+}
+
+.next {
+    overflow-x: hidden;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 2% 10%;
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+    text-align: left;
+}
+
+.text h3 {
+    font-size: 25px;
+    font-family: 'Choc Chip';
+}
+
+.sliderbutton {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin-top: 5%;
+}
+
+.sliderbutton img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.landingmerch {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10%;
+    height: max-content;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+}
+
+.products img {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.merchtext {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("imgs/moneta.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-top: 8%;
+    padding-bottom: 10%;
+}
+
+.testi {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #494848;
+    font-size: 25px;
+    text-align: left;
+    width: 85%;
+    line-height: 130%;
+}
+
+.testi h2 {
+    font-family: 'Choc Chip';
+}
+
+.merchbutton {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.merchbutton a {
+    justify-content: start;
+}
+.merchbutton img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 33%;
+}
+
+.landinginfo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10%;
+    align-items: center;
+    justify-content: center;
+    background-image: url("imgs/Q2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.infotesti {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #494848;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.infotesti h3 {
+    font-family: 'Choc Chip';
+    font-size: 25px;
+}
+
+.loghisocial {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.loghisocial img {
+    width: 50px;
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.infobutton {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.infobutton img {
+    width: 60%;
+}
+
+.email {
+    border: none;
+    background: none;
+    padding: 0% !important;
+}
+
+.dropdown-content-2 {
+    display: none;
+    background: none;
+}
+
+.invio {
+    display: none;
+    border: none;
+    background: none;
+    justify-content: center;
+    margin-top: 15%;
+    padding: 0% !important;
+    font-family: 'Choc Chip';
+    font-size: 25px;
+    color: #494848;
+}
+
+.invio img {
+    width: 49%;
+}
+
+input {
+    font-family: 'Choc Chip', sans-serif;
+    font-size: 14px;
+    color: #494848;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: #494848;
+    border-bottom-width: 3px;
+    margin-bottom: 8%;
+    padding-left: 3%;
+    padding-bottom: 3%;
+}
+
+textarea {
+    font-family: 'Choc Chip', sans-serif;
+    font-size: 14px;
+    color: #494848;
+    background: none;
+    border-top: none;
+    border-right: none;
+    border-bottom-color: #494848;
+    border-bottom-width: 3px;
+    border-left-color: #494848;
+    border-left-width: 3px;
+    padding-left: 3%;
+    padding-bottom: 3%;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.logounity {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    align-content: center;
+    justify-content: center;
+}
+
+.loghistore {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    align-content: center;
+}
+
+.logounity img, .loghistore img {
+    width: 20%;
+    margin-right: 5%;
+}
+
+.emptyfooter {
+    width: 10%;
+}
+
+.testofooter {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #494848;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+@font-face {
+    font-family: 'Choc Chip';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Choc Chip'), url('ChocChip.woff') format('woff');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* iPad version */
+@media only screen and (max-width: 768px) {
+    .q img {
+        height: 40px;
+    }
+
+    .emptyheader {
+        width: 5%;
+    }
+
+    .emptyheader1 {
+        width: 20%;
+    }
+
+    .navbar {
+        width: 60%;
+    }
+
+    .menu {
+        font-size: 22px;
+    }
+
+    .desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: flex;
+    }
+
+    .desktop1 {
+        display: flex;
+    }
+
+    .mobile1 {
+        display: none;
+    }
+
+    .heroimage img {
+        margin-top: 4.3%;
+    }
+
+    .herobutton img {
+        margin-top: 90%;
+    }
+
+    .pergamenanews {
+        height: auto;
+    }
+    
+    .text {
+        font-size: 12px
+    }
+
+    .text h3 {
+        font-size: 16px;
+    }
+
+    .testi {
+        width: 80%;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .landingmerch {
+        align-items: center;
+    }
+
+    .merchtext {
+        background-size: 80%;
+        background-position: left;
+        width: 50%;
+    }
+
+    .products img {
+        width: 80%;
+    }
+
+    .merchbutton {
+        justify-content: center;
+    }
+
+    .merchbutton img {
+        width: 30%;
+    }
+
+    .products {
+        width: 50%;
+    }
+
+    .infotesti {
+        font-size: 16px;
+    }
+
+    .infotesti h3 {
+        font-size: 22px;
+    }
+
+    .loghisocial img {
+        width: 40px;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .infobutton button img {
+        height: 30%;
+    }
+
+    .testofooter {
+        font-size: 8px;
+    }
+
+    .emptyfooter {
+        display: none;
+    }
+
+    .logounity img, .loghistore img {
+        width: 30%;
+        margin-right: 2%;
+        margin-left: 2%;
+        margin-bottom: 5%;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+
+    .invio {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* iPhone version */
+@media only screen and (max-width: 376px) {
+    .emptyheader, .navbar {
+        display: none;
+    }
+
+    .emptyheader1 {
+        width: 70%;
+    }
+
+    .burgercontainer {
+        display: flex;
+    }
+
+    button img {
+        height: 35px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        overflow: auto;
+        width: 450%;
+        height: 450%;
+        text-align: center;
+        margin-top: 75%;
+        font-family: 'Choc Chip';
+        line-height: 200%;
+        font-size: 25px;
+        background-image: url("imgs/foglietto_burger_lungo.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: 200%;
+    }
+
+    .scendi a {
+        color: #494848; 
+    }
+
+    .scendi {
+       margin-top: 18%; 
+    }
+
+    .desktop1 {
+        display: none;
+    }
+
+    .mobile1 {
+        display: flex;
+    }
+
+    .slideshow {
+        margin-top: 5%;
+    }
+
+    .herobutton img, .sliderbutton img {
+        width: 100%;
+    }
+
+    .pergamenanews img {
+        width: 50%;
+    }
+
+    .text {
+        font-size: 10px;
+        bottom: 12%;
+    }
+
+    .landingmerch {
+        flex-direction: column;
+    }
+
+    .products {
+        width: 80%;
+    }
+
+    .products img {
+        width: 100%;
+    }
+
+    .merchtext {
+        background-position: center;
+        width: 80%;
+        justify-content: center;
+    }
+
+    .testi {
+        text-align: center;
+    }
+
+    .merchbutton a {
+        justify-content: center;
+    }
+
+    .merchbutton img {
+        width: 38%;
+    }
+
+    .infotesti {
+        font-size: 12px;
+    }
+
+    .infotesti h3 {
+        font-size: 18px;
+    }
+
+    .infobutton {
+        width: 30%;
+    }
+
+    .infobutton img {
+        width: 80%;
+    }
+
+    .invio {
+        font-size: 18px;
+    }
+
+    .invio img {
+        width: 72%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20%;
+    }
+    
+    .emptyfooter {
+        display: none;
+    }
+    
+    .logounity {
+        justify-content: center;
+        margin-bottom: 8%;
+        width: 30%;
+    }
+    
+    .loghistore {
+        justify-content: center;
+    }
+    
+    .logounity img, .loghistore img {
+        width: 70%;
+        margin-right: 2%;
+        margin-left: 2%;
+        margin-bottom: 5%;
+    }
+    
+    .testofooter {
+        font-size: 8px;
+        margin-bottom: 10%;
+    }
+}

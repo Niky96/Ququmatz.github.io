@@ -1,0 +1,146 @@
+<html>
+<head>
+    <title>QUQUMATZ</title>
+    <link rel="icon" href="imgs/favicon.png" type="image/png"/>
+    <link href="index_style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400">
+    <script type="text/javascript" src="ququ_java.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+</head>
+<body onload="inizializza()">
+    <nav class="header">
+        <div class="q">
+            <a href="index.html"><img src="imgs/Q.png"></a>
+        </div>
+        <div class="emptyheader"></div>
+        <div class="navbar">
+            <div class="menu">
+                <a href="gamepage.html">GAME</a>
+            </div>
+            <div class="menu">
+                <a href="news.html">NEWS</a>
+            </div>
+            <div class="menu">
+                <a class="desktop" href="extra.html">EXTRA</a>
+                <a class="mobile" href="extra_mobile.html">EXTRA</a>
+            </div>
+            <div class="menu">
+                <a href="index.html#contatti">CONTATTI</a>
+            </div>
+        </div>
+        <div class="emptyheader1"></div>
+        <div class="burgercontainer">
+            <button class="linee" onclick="burgermenu()">
+                <img src="imgs/burgerbutton.png">
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <div class="scendi">
+                    <a href="gamepage_mobile.html">GAME</a>
+                    <a href="news.html">NEWS</a>
+                    <a href="extra_mobile.html">EXTRA</a>
+                    <a href="index.html#contatti">CONTATTI</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <landing class="landing">
+        <div class="hero">
+            <div class="heroimage">
+                <picture>
+                    <source media="(max-width: 479px)" srcset="imgs/hero2.png">
+                    <img src="imgs/hero.png">
+                </picture>
+            </div>
+            <div class="herobutton">
+                <a class="desktop1" href="gamepage.html"><img src="imgs/bottonehero.png"></a>
+                <a class="mobile1" href="gamepage_mobile.html"><img src="imgs/bottonehero.png"></a>
+            </div>
+        </div>
+        <div class="landingnews">
+            <div class="pergamenanews">
+                <img src="imgs/ultimenotizie.png">
+            </div>
+            <div class="sxarrow"><a class="prev" onclick="plusSlides(-1)"><img src="imgs/frecciascura_sx.png" style="width:50%;"></a></div>
+            <div class="slideshow">
+                <div class="mySlides">
+                    <picture>
+                        <source media="(max-width: 376px)" srcset="imgs/news3_mobile.png">
+                        <img src="imgs/news3.png" style="width:100%">
+                    </picture>
+                    <div class="text"><h3>ARE YOU READY?</h3>Manca poco al rilascio di Ququmatz! Restate aggiornati sui nostri canali sociali per scoprire la data di uscita.</div>
+                </div>
+                <div class="mySlides">
+                    <picture>
+                        <source media="(max-width: 376px)" srcset="imgs/news2_mobile.png">
+                        <img src="imgs/news2.png" style="width:100%">
+                    </picture>
+                    <div class="text"><h3>C'È ARIA DI SFIDA</h3> La lotta non finisce mai se puoi combattere contro i tuoi amici online. Addestra le tue truppe e schierale per incontri epici!</div>
+                </div>
+                <div class="mySlides">
+                    <picture>
+                        <source media="(max-width: 376px)" srcset="imgs/news1_mobile.png">
+                        <img src="imgs/news1.png" style="width:100%">
+                    </picture>
+                    <div class="text"><h3>GLI EROI SONO PRONTI</h3>Tutti gli Eroi e gli NPC disponibili nel roster dei Luchadores sono pronto a combattere! Ora le forze del male non avranno scampo.</div>
+                </div>
+            </div>
+            <div class="dxarrow"><a class="next" onclick="plusSlides(1)"><img src="imgs/frecciascura_dx.png" style="width:50%;"></a></div>
+            <div class="sliderbutton">
+                <a href="news.html"><img src="imgs/bottonehero.png"></a>
+            </div>
+        </div>
+        <div class="landingmerch">
+            <div class="products">
+                <img src="imgs/mock_shop.png">
+            </div>
+            <div class="merchtext">
+                <div class="testi">
+                    <p><h2>LO STILE QUQUMATZ</h2>Tanti prodotti inediti a tema Ququmatz e Luchadores vi aspettano nel nostro store. Le edizioni sono limitate, quindi... andale! Prima che vi sfuggano di mano.</p>
+                </div>
+                <div class="merchbutton">
+                    <a class="desktop" href="extra.html"><img src="imgs/bottonehero.png"></a>
+                    <a class="mobile" href="extra_mobile.html"><img src="imgs/bottonehero.png"></a>
+                </div>
+            </div>
+        </div>
+        <div id="contatti" class="landinginfo">
+            <div class="infotesti">
+                <p><h3>SEGUICI SUI SOCIAL</h3>Segui le nostre pagine social<br>per rimanere sempre aggiornato</p>
+            </div>
+            <div class="loghisocial">
+                <img src="imgs/fb.png">
+                <img src="imgs/ig.png">
+                <img src="imgs/tw.png">
+            </div>
+            <div class="infobutton">
+                <button id="scomparitiprego" class="email" onclick="inviamail()">
+                    <img src="imgs/e-mail.png">
+                </button>
+                <div id="writeHere" class="dropdown-content-2">
+                    <input type="text" placeholder="Nome" size="40">
+                    <input type="text" placeholder="E-mail" size="40">
+                    <input type="text" placeholder="Tipo di richiesta" size="40">
+                    <textarea class="area" name="tuomessaggio" cols="40" rows="10" aria-required="true" aria-invalid="false" placeholder="Messaggio"></textarea>
+                </div>
+                <button id="inviata" class="invio" onclick="mailinviata()">
+                    <img src="imgs/invia.png">
+                </button>
+            </div>
+        </div>
+    </landing>
+</body>
+<footer class="footer">
+    <div class="emptyfooter"></div>
+    <div class="logounity">
+        <img src="imgs/unity.png">
+    </div>
+    <div class="loghistore">
+        <img src="imgs/appstore.png">
+        <img src="imgs/googleplay.png">
+    </div>
+    <div class="testofooter">
+        <p>© 2020 QUQUMATZ. Tutti i diritti riservati.</p>
+    </div>
+</footer>
+</html>
